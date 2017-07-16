@@ -1,0 +1,77 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'HKGroteskRegular', Helvetica;
+  background-image: url("../imgs/woodgrain.png");
+}
+section {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.content {
+  margin: calc(50vh - 185px) auto 0;
+  max-width: 900px;
+  padding: 0 10%;
+}
+.monkey {
+  max-width: 320px;
+  margin-bottom: 30px;
+}
+.desktop-logo {
+  position: relative;
+  max-height: 150px;
+  width: 100%;
+  min-width: 320px;
+  margin: 0 auto;
+}
+.desktop-logo {
+  display: block;
+}
+.mobile-logo {
+  position: relative;
+  width: 100%;
+  display: none;
+  margin: 0 auto;
+}
+.highlight {
+  top: -20px;
+  position: absolute;
+  transform: rotate(-15deg);
+  font-size: 24px;
+  text-shadow: 3px 2px 0px #727272;
+}
+.link {
+  float: right;
+  color: black;
+  font-size: 18px;
+  padding-top: 20px;
+}
+.link:hover, .link:active {
+  color: #8BC34A;
+}
+.clear-fix {
+  clear: right;
+}
+
+@media only screen and (max-width: 500px) {
+  .content {
+    margin: calc(50vh - 120px) auto 0;
+  }
+  .desktop-logo {
+    display: none;
+  }
+  .mobile-logo {
+    display: block;
+  }
+  .highlight {
+    top: -30px;
+    left: 0;
+  }
+  .monkey {
+    display: none;
+  }
+}
+
